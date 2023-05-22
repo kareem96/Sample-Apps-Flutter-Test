@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 int? n = int.tryParse(_textEditingController.text);
-                int increment = 10; // Ubah sesuai kebutuhan
+                int increment = 11; // Ubah sesuai kebutuhan
                 if (n != null) {
                   BlocProvider.of<NumberSequenceBloc>(context)
                       .add(GenerateIncrementalSequenceEvent(n, increment));

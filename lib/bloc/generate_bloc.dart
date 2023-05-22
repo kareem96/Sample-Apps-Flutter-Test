@@ -45,7 +45,7 @@ class NumberSequenceBloc
   Stream<NumberSequenceState> _mapGenerateIncrementalSequenceEvent(
       int n, int increment) async* {
     String sequence = '';
-    int currentNumber = 1;
+    int currentNumber = 10;
     for (int i = 1; i <= n; i++) {
       sequence += currentNumber.toString() + ' ';
       currentNumber += increment;
